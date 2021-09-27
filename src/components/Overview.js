@@ -5,16 +5,7 @@ import { ReactComponent as UpArrow } from "../svgs/icon-up.svg";
 import { ReactComponent as DownArrow } from "../svgs/icon-down.svg";
 
 // import helper function for logo selection
-import { handlePlatformLogo } from "../utils/helpers";
-
-const handleDeltaColour = (textcolour) => {
-  if (textcolour === "up") {
-    return "var(--limeGreen)";
-  }
-  if (textcolour === "down") {
-    return "var(--brightRed)";
-  }
-};
+import { handlePlatformLogo, handleNumToK } from "../utils/helpers";
 
 const OverviewSection = styled.section`
   h2 {
@@ -49,6 +40,7 @@ const Card = styled.div`
   .card-header {
     font-weight: 700;
     margin-bottom: 1.5rem;
+    align-items: center;
   }
 
   .card-details {
@@ -95,7 +87,9 @@ export const Overview = ({ data }) => {
               <p className="col--right">{handlePlatformLogo(platform)}</p>
             </div>
             <div className="row card-details">
-              <p className="col--left card-details__total">{total}</p>
+              <p className="col--left card-details__total">
+                {handleNumToK(total)}
+              </p>
               <p
                 className={`col--right card-details__delta ${
                   deltaType === "up" ? "up" : "down"
