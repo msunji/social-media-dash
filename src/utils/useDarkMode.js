@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const [mounted, setMounted] = useState(false);
 
   const setThemeType = (type) => {
@@ -23,7 +23,7 @@ export const useDarkMode = () => {
     if (localTheme) {
       setTheme(localTheme);
     } else {
-      setThemeType("dark");
+      setThemeType("light");
     }
     setMounted(true);
   }, []);
