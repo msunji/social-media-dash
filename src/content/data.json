@@ -37,71 +37,59 @@
   "overview": [
     {
       "platform": "facebook",
-      "metrics": [
-        {
-          "type": "Page Views",
-          "total": 87,
-          "delta": 3,
-          "deltaType": "up"
-        },
-        {
-          "type": "Likes",
-          "total": 52,
-          "delta": 2,
-          "deltaType": "down"
-        }
-      ]
+      "type": "Page Views",
+      "total": 87,
+      "delta": 3,
+      "deltaType": "up"
+    },
+    {
+      "platform": "facebook",
+      "type": "Likes",
+      "total": 52,
+      "delta": 2,
+      "deltaType": "down"
     },
     {
       "platform": "instagram",
-      "metrics": [
-        {
-          "type": "Likes",
-          "total": 5462,
-          "delta": 2257,
-          "deltaType": "up"
-        },
-        {
-          "type": "Profile Views",
-          "total": 52000,
-          "delta": 1375,
-          "deltaType": "up"
-        }
-      ]
+      "type": "Likes",
+      "total": 5462,
+      "delta": 2257,
+      "deltaType": "up"
+    },
+    {
+      "platform": "instagram",
+      "type": "Profile Views",
+      "total": 52000,
+      "delta": 1375,
+      "deltaType": "up"
     },
     {
       "platform": "twitter",
-      "metrics": [
-        {
-          "type": "Retweets",
-          "total": 117,
-          "delta": 303,
-          "deltaType": "up"
-        },
-        {
-          "type": "Likes",
-          "total": 507,
-          "delta": 553,
-          "deltaType": "up"
-        }
-      ]
+      "type": "Retweets",
+      "total": 117,
+      "delta": 303,
+      "deltaType": "up"
+    },
+    {
+      "platform": "twitter",
+      "type": "Likes",
+      "total": 507,
+      "delta": 553,
+      "deltaType": "up"
     },
     {
       "platform": "youtube",
-      "metrics": [
-        {
-          "type": "Likes",
-          "total": 107,
-          "delta": 19,
-          "deltaType": "down"
-        },
-        {
-          "type": "Likes",
-          "total": 1407,
-          "delta": 12,
-          "deltaType": "down"
-        }
-      ]
+      "type": "Likes",
+      "total": 107,
+      "delta": 19,
+      "deltaType": "down"
+    },
+    {
+      "platform": "youtube",
+      "type": "Likes",
+      "total": 1407,
+      "delta": 12,
+      "deltaType": "down"
     }
 
   ]
