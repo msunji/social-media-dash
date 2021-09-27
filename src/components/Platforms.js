@@ -66,12 +66,13 @@ const Card = styled.div`
   }
 
   .followers-data {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.2rem;
     &__num {
       font-weight: 700;
       font-size: 4em;
       color: ${({ theme }) => theme.textMajor};
       margin-bottom: 0.8rem;
+      letter-spacing: -2px;
     }
     &__text {
       text-transform: uppercase;
