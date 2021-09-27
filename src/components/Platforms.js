@@ -29,6 +29,12 @@ const Card = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    transition: all 0.4s ease-in;
+
+    &:hover {
+      background: ${({ theme }) => theme.cardHover};
+    }
   }
 
   .user-info {

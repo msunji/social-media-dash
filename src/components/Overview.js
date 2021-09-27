@@ -27,6 +27,11 @@ const Card = styled.div`
   margin-bottom: 1rem;
   border-radius: 5px;
   padding: 1.5rem;
+  transition: all 0.4s ease-in;
+
+  &:hover {
+    background: ${({ theme }) => theme.cardHover};
+  }
 
   .row {
     display: grid;
