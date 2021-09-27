@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./styles/constants";
 import GlobalStyle from "./styles/globalStyle";
-import { Grid, Header, Overview, Platforms } from "./components/";
+import { Grid, Header, Overview, Platforms, Background } from "./components/";
 import Data from "./content/data.json";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <>
       <ThemeProvider theme={lightTheme}>
         <GlobalStyle />
+        <Background />
         <Grid>
           <Header data={Data} />
           <Platforms data={Data} />
