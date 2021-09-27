@@ -6,13 +6,13 @@ import Data from "./content/data.json";
 import { useDarkMode } from "./utils/useDarkMode";
 
 function App() {
-  const [theme, handleThemeToggle] = useDarkMode();
+  const [theme, handleThemeToggle, mounted] = useDarkMode();
 
   const themeType = theme === "light" ? lightTheme : darkTheme;
 
-  // if (!mounted) {
-  //   return <div />;
-  // }
+  if (!mounted) {
+    return <div />;
+  }
 
   return (
     <>
