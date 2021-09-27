@@ -6,6 +6,7 @@ export const lightTheme = {
   textMinor: "hsl(228, 12%, 44%)",
   topBg: "hsl(225, 100%, 98%)",
   cardBg: "hsl(227, 47%, 96%)",
+  cardHover: "hsl(37,97.4%,70%)",
 };
 
 export const darkTheme = {
@@ -14,6 +15,7 @@ export const darkTheme = {
   textMinor: "hsl(228, 34%, 66%)",
   topBg: "hsl(232, 19%, 15%)",
   cardBg: "hsl(228, 28%, 20%)",
+  cardHover: "hsl(228, 25%, 27%)",
 };
 
 export const breakpoints = {
