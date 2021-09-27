@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../styles/constants";
 
 import {
   handleNumToK,
@@ -10,6 +11,21 @@ import {
 const Grid = styled.section`
   display: grid;
   grid-template-columns: 1fr;
+
+  @media screen and ${breakpoints.lg} {
+    grid-template-columns: repeat(2, 1fr);
+
+    > div:not(:nth-of-type(2n)) {
+      margin-right: 1rem;
+    }
+  }
+  @media screen and ${breakpoints.xl} {
+    grid-template-columns: repeat(4, 1fr);
+
+    > div:not(:nth-of-type(4n)) {
+      margin-right: 1rem;
+    }
+  }
 `;
 
 const Card = styled.div`
@@ -29,6 +45,7 @@ const Card = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-radius: 5px;
 
     transition: all 0.4s ease-in;
 

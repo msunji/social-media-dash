@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../styles/constants";
 
 // import helper function for logo selection
 import {
@@ -18,6 +19,21 @@ const OverviewSection = styled.section`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+
+  @media screen and ${breakpoints.lg} {
+    grid-template-columns: repeat(3, 1fr);
+
+    > div:not(:nth-of-type(3n)) {
+      margin-right: 1rem;
+    }
+  }
+  @media screen and ${breakpoints.xl} {
+    grid-template-columns: repeat(4, 1fr);
+
+    > div:not(:nth-of-type(4n)) {
+      margin-right: 1rem;
+    }
+  }
 `;
 
 const Card = styled.div`
