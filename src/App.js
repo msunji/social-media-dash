@@ -1,8 +1,21 @@
+import { ThemeProvider } from "styled-components";
+import { lightTheme } from "./styles/constants";
+import GlobalStyle from "./styles/globalStyle";
+import { Grid, Header, Overview, Platforms } from "./components/";
+import Data from "./content/data.json";
+
 function App() {
   return (
-    <div>
-      <h1>test</h1>
-    </div>
+    <>
+      <ThemeProvider theme={lightTheme}>
+        <GlobalStyle />
+        <Grid>
+          <Header data={Data} />
+          <Platforms data={Data} />
+          <Overview data={Data} />
+        </Grid>
+      </ThemeProvider>
+    </>
   );
 }
 
