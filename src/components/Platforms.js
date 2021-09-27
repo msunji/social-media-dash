@@ -11,20 +11,13 @@ import {
 const Grid = styled.section`
   display: grid;
   grid-template-columns: 1fr;
+  margin-bottom: 3rem;
 
   @media screen and ${breakpoints.lg} {
     grid-template-columns: repeat(2, 1fr);
-
-    > div:not(:nth-of-type(2n)) {
-      margin-right: 1rem;
-    }
   }
   @media screen and ${breakpoints.xl} {
     grid-template-columns: repeat(4, 1fr);
-
-    > div:not(:nth-of-type(4n)) {
-      margin-right: 1rem;
-    }
   }
 `;
 
@@ -110,6 +103,17 @@ const Card = styled.div`
     &.down {
       color: var(--brightRed);
     }
+  }
+
+  @media screen and ${breakpoints.lg} {
+    &:not(:nth-of-type(2n)) {
+      margin-right: 1rem;
+    }
+  }
+
+  @media screen and ${breakpoints.xl} {
+    &:not(:nth-of-type(4n)) {
+      margin-right: 1rem;
   }
 `;
 
