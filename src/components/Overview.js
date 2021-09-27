@@ -10,6 +10,8 @@ import { handlePlatformLogo, handleNumToK } from "../utils/helpers";
 const OverviewSection = styled.section`
   h2 {
     font-weight: 700;
+    font-size: 1.71em;
+    margin-bottom: 2rem;
   }
 `;
 
