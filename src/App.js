@@ -1,20 +1,22 @@
-import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./styles/constants";
 import GlobalStyle from "./styles/globalStyle";
 import { Grid, Header, Overview, Platforms, Background } from "./components/";
 import Data from "./content/data.json";
+import { useDarkMode } from "./utils/useDarkMode";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [theme, handleThemeToggle] = useDarkMode();
 
-  const handleThemeToggle = () => {
-    setDarkMode(!darkMode);
-  };
+  const themeType = theme === "light" ? lightTheme : darkTheme;
+
+  // if (!mounted) {
+  //   return <div />;
+  // }
 
   return (
     <>
-      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <ThemeProvider theme={themeType}>
         <GlobalStyle />
         <Background />
         <Grid>
