@@ -29,12 +29,21 @@ const Grid = styled.section`
 `;
 
 const Card = styled.div`
-  border-radius: 5px;
+  position: relative;
+  border-radius: 0 0 5px 5px;
   margin-bottom: 1.6rem;
-  border-top: 5px solid transparent;
   background-clip: content-box, border-box;
 
-  ${(props) => handlePlatformColour(props.bordercolour)}
+  &::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+    ${(props) => handlePlatformColour(props.bordercolour)}
+    border-radius: 5px 5px 0 0;
+  }
 
   .inner-card {
     background: ${({ theme }) => theme.cardBg};
@@ -45,7 +54,7 @@ const Card = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
 
     transition: all 0.4s ease-in;
 
