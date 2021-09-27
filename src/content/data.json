@@ -1,0 +1,108 @@
+{
+  "followers": [
+    {
+      "total": 23004
+    }
+  ],
+  "platformData": [
+    {
+      "username": "@nathanf",
+      "platform": "facebook",
+      "followers": 1987,
+      "followersDelta": 12,
+      "deltaType": "up"
+    },
+    {
+      "username": "@nathanf",
+      "platform": "twitter",
+      "followers": 1044,
+      "followersDelta": 99,
+      "deltaType": "up"
+    },
+    {
+      "username": "@realnathanf",
+      "platform": "instagram",
+      "followers": 11000,
+      "followersDelta": 1099,
+      "deltaType": "up"
+    },
+    {
+      "username": "Nathan F.",
+      "platform": "youtube",
+      "followers": 8239,
+      "followersDelta": 144,
+      "deltaType": "down"
+    }
+  ],
+  "overview": [
+    {
+      "platform": "facebook",
+      "metrics": [
+        {
+          "type": "Page Views",
+          "total": 87,
+          "delta": 3,
+          "deltaType": "up"
+        },
+        {
+          "type": "Likes",
+          "total": 52,
+          "delta": 2,
+          "deltaType": "down"
+        }
+      ]
+    },
+    {
+      "platform": "instagram",
+      "metrics": [
+        {
+          "type": "Likes",
+          "total": 5462,
+          "delta": 2257,
+          "deltaType": "up"
+        },
+        {
+          "type": "Profile Views",
+          "total": 52000,
+          "delta": 1375,
+          "deltaType": "up"
+        }
+      ]
+    },
+    {
+      "platform": "twitter",
+      "metrics": [
+        {
+          "type": "Retweets",
+          "total": 117,
+          "delta": 303,
+          "deltaType": "up"
+        },
+        {
+          "type": "Likes",
+          "total": 507,
+          "delta": 553,
+          "deltaType": "up"
+        }
+      ]
+    },
+    {
+      "platform": "youtube",
+      "metrics": [
+        {
+          "type": "Likes",
+          "total": 107,
+          "delta": 19,
+          "deltaType": "down"
+        },
+        {
+          "type": "Likes",
+          "total": 1407,
+          "delta": 12,
+          "deltaType": "down"
+        }
+      ]
+    }
+
+  ]
+}
