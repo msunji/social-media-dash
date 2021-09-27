@@ -4,6 +4,7 @@ import {
   handleNumToK,
   handlePlatformLogo,
   handlePlatformColour,
+  handleArrows,
 } from "../utils/helpers";
 
 const Grid = styled.section`
@@ -35,6 +36,7 @@ const Card = styled.div`
     flex-direction: row;
     align-items: center;
     font-weight: 700;
+    margin-bottom: 1.8rem;
 
     svg {
       margin-right: 0.6rem;
@@ -46,10 +48,12 @@ const Card = styled.div`
   }
 
   .followers-data {
+    margin-bottom: 1.8rem;
     &__num {
       font-weight: 700;
       font-size: 4.43em;
       color: ${({ theme }) => theme.textMajor};
+      margin-bottom: 0.8rem;
     }
     &__text {
       text-transform: uppercase;
@@ -59,7 +63,21 @@ const Card = styled.div`
     }
   }
   .followers-delta {
+    display: flex;
+    align-items: center;
     font-weight: 700;
+
+    svg {
+      margin-right: 5px;
+      transform: scale(1.4);
+    }
+
+    &.up {
+      color: var(--limeGreen);
+    }
+    &.down {
+      color: var(--brightRed);
+    }
   }
 `;
 
@@ -81,7 +99,14 @@ export const Platforms = ({ data }) => {
                 <p className="followers-data__num">{handleNumToK(followers)}</p>
                 <p className="followers-data__text">followers</p>
               </div>
-              <div className="followers-delta">{followersDelta} Today</div>
+              <div
+                className={`followers-delta ${
+                  deltaType === "up" ? "up" : "down"
+                }`}
+              >
+                {handleArrows(deltaType)}
+                {followersDelta} Today
+              </div>
             </div>
           </Card>
         )
