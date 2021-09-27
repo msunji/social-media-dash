@@ -6,7 +6,7 @@ export const lightTheme = {
   textMinor: "hsl(228, 12%, 44%)",
   topBg: "hsl(225, 100%, 98%)",
   cardBg: "hsl(227, 47%, 96%)",
-  cardHover: "hsl(37,97.4%,70%)",
+  cardHover: "hsl(228, 33%, 91%)",
 };
 
 export const darkTheme = {
