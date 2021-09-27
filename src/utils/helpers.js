@@ -4,6 +4,21 @@ import { ReactComponent as IgLogo } from "../svgs/icon-instagram.svg";
 import { ReactComponent as TwitterLogo } from "../svgs/icon-twitter.svg";
 import { ReactComponent as YoutubeLogo } from "../svgs/icon-youtube.svg";
 
+export const handlePlatformColour = (platform) => {
+  switch (platform) {
+    case "facebook":
+      return "background: var(--facebook);";
+    case "twitter":
+      return "background: var(--twitter);";
+    case "youtube":
+      return "background: var(--youtube);";
+    case "instagram":
+      return "background: var(--instagram);";
+    default:
+      return null;
+  }
+};
+
 export const handlePlatformLogo = (platform) => {
   switch (platform) {
     case "facebook":
