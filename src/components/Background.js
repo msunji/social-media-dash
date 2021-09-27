@@ -9,4 +9,5 @@ export const Background = styled.div`
   background: ${({ theme }) => theme.topBg};
   left: 0;
   top: 0;
+  transition: all 0.4s ease;
 `;
