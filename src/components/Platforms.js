@@ -61,7 +61,7 @@ const Card = styled.div`
     }
 
     p {
-      font-size: 0.86em;
+      font-size: 0.86rem;
     }
   }
 
@@ -69,14 +69,14 @@ const Card = styled.div`
     margin-bottom: 2.2rem;
     &__num {
       font-weight: 700;
-      font-size: 4em;
+      font-size: 4rem;
       color: ${({ theme }) => theme.textMajor};
       margin-bottom: 0.8rem;
       letter-spacing: -2px;
     }
     &__text {
       text-transform: uppercase;
-      font-size: 0.86em;
+      font-size: 0.86rem;
       letter-spacing: 5px;
       color: ${({ theme }) => theme.textMinor};
     }
@@ -85,6 +85,7 @@ const Card = styled.div`
     display: flex;
     align-items: center;
     font-weight: 700;
+    font-size: 0.86rem;
 
     svg {
       margin-right: 5px;
@@ -113,7 +114,6 @@ const Card = styled.div`
 
 export const Platforms = ({ data }) => {
   let platformData = data.platformData;
-  console.log(platformData);
 
   return (
     <Grid>

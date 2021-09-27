@@ -11,7 +11,7 @@ import {
 const OverviewSection = styled.section`
   h2 {
     font-weight: 700;
-    font-size: 1.71em;
+    font-size: 1.71rem;
     margin-bottom: 2rem;
   }
 `;
@@ -72,7 +72,7 @@ const Card = styled.div`
     .card-details__total {
       font-weight: 700;
       color: ${({ theme }) => theme.textMajor};
-      font-size: 2.29em;
+      font-size: 2.29rem;
     }
 
     .card-details__delta {

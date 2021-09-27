@@ -5,7 +5,6 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
 
   :root {
-    --sans-serif: "Inter", sans-serif;
     --limeGreen: hsl(163, 72%, 41%);
     --brightRed: hsl(356, 69%, 56%);
     --facebook: hsl(208, 92%, 53%);
@@ -27,14 +26,18 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
-    font-size: 14px;
-    font-family: var(--sans-serif);
-    transition: all 0.3s linear 0.12s;
   }
 
   body {
     background: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.textMinor};
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s linear 0.12s;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 1rem;
   }
 `;
 

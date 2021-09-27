@@ -19,7 +19,7 @@ const HeaderSection = styled.section`
     padding-bottom: 1.7rem;
 
     h1 {
-      font-size: 1.71em;
+      font-size: 1.71rem;
       line-height: 1.1;
       color: ${({ theme }) => theme.textMajor};
       margin-bottom: 0.8rem;
