@@ -53,19 +53,51 @@ const StyledToggle = styled.label`
   display: inline-block;
   width: 48px;
   height: 24px;
-  background: ${({ theme }) => theme.toggle};
+  background: hsl(230, 22%, 74%);
   border-radius: 12px;
-  // transition: all 0.4s ease;
+  transition: background 0.4s ease;
   margin-left: 1rem;
+  z-index: 1;
 
   &:hover {
-    background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      21deg,
+      rgba(55, 143, 230, 1) 23%,
+      rgba(62, 218, 130, 1) 98%
+    );
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s linear;
   }
 
   #checkbox {
     opacity: 0;
     width: 0;
     height: 0;
+
+    &:checked + .slider {
+      background: linear-gradient(
+        21deg,
+        rgba(55, 143, 230, 1) 23%,
+        rgba(62, 218, 130, 1) 98%
+      );
+    }
+    z-index: 1;
 
     &:checked + .slider::before {
       transform: translateX(24px);
@@ -75,14 +107,17 @@ const StyledToggle = styled.label`
   .slider {
     position: absolute;
     cursor: pointer;
-    top: 3px;
-    left: 3px;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 12px;
 
     &::before {
       position: absolute;
       content: "";
+      top: 3px;
+      left: 3px;
       height: 18px;
       width: 18px;
       background: ${({ theme }) => theme.topBg};
