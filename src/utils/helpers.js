@@ -22,3 +22,11 @@ export const handlePlatformLogo = (platform) => {
 export const handleNumToK = (num) => {
   return Math.abs(num) >= 10000 ? Math.abs(num) / 1000 + "k" : Math.abs(num);
 };
+
+export const handleNumSeparator = (num) => {
+  return Math.abs(num) >= 1000
+    ? Math.abs(num)
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    : Math.abs(num);
+};
