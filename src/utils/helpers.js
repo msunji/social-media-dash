@@ -4,6 +4,10 @@ import { ReactComponent as IgLogo } from "../svgs/icon-instagram.svg";
 import { ReactComponent as TwitterLogo } from "../svgs/icon-twitter.svg";
 import { ReactComponent as YoutubeLogo } from "../svgs/icon-youtube.svg";
 
+// Import arrow svgs
+import { ReactComponent as UpArrow } from "../svgs/icon-up.svg";
+import { ReactComponent as DownArrow } from "../svgs/icon-down.svg";
+
 export const handlePlatformColour = (platform) => {
   switch (platform) {
     case "facebook":
@@ -44,4 +48,13 @@ export const handleNumSeparator = (num) => {
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     : Math.abs(num);
+};
+
+export const handleArrows = (deltaType) => {
+  if (deltaType === "up") {
+    return <UpArrow className="arrow" />;
+  }
+  if (deltaType === "down") {
+    return <DownArrow className="arrow" />;
+  }
 };
