@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-// Import arrow svgs
-import { ReactComponent as UpArrow } from "../svgs/icon-up.svg";
-import { ReactComponent as DownArrow } from "../svgs/icon-down.svg";
-
 // import helper function for logo selection
-import { handlePlatformLogo, handleNumToK } from "../utils/helpers";
+import {
+  handlePlatformLogo,
+  handleNumToK,
+  handleArrows,
+} from "../utils/helpers";
 
 const OverviewSection = styled.section`
   h2 {
@@ -76,7 +76,6 @@ const Card = styled.div`
 
 export const Overview = ({ data }) => {
   let overview = data.overview;
-  console.log(overview);
 
   return (
     <OverviewSection>
@@ -97,11 +96,7 @@ export const Overview = ({ data }) => {
                   deltaType === "up" ? "up" : "down"
                 }`}
               >
-                {deltaType === "up" ? (
-                  <UpArrow className="arrow" />
-                ) : (
-                  <DownArrow className="arrow" />
-                )}
+                {handleArrows(deltaType)}
                 {delta}%
               </p>
             </div>
