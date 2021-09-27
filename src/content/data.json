@@ -6,6 +6,7 @@
   ],
   "platformData": [
     {
+      "id": 0,
       "username": "@nathanf",
       "platform": "facebook",
       "followers": 1987,
@@ -13,6 +14,7 @@
       "increase": true
     },
     {
+      "id": 1,
       "username": "@nathanf",
       "platform": "twitter",
       "followers": 1044,
@@ -20,6 +22,7 @@
       "deltaType": "up"
     },
     {
+      "id": 2,
       "username": "@realnathanf",
       "platform": "instagram",
       "followers": 11000,
@@ -27,6 +30,7 @@
       "deltaType": "up"
     },
     {
+      "id": 3,
       "username": "Nathan F.",
       "platform": "youtube",
       "followers": 8239,
