@@ -10,7 +10,7 @@
       "platform": "facebook",
       "followers": 1987,
       "followersDelta": 12,
-      "deltaType": "up"
+      "increase": true
     },
     {
       "username": "@nathanf",
@@ -36,6 +36,7 @@
   ],
   "overview": [
     {
+      "id": 0,
       "platform": "facebook",
       "type": "Page Views",
       "total": 87,
@@ -43,6 +44,7 @@
       "deltaType": "up"
     },
     {
+      "id": 1,
       "platform": "facebook",
       "type": "Likes",
       "total": 52,
@@ -50,6 +52,7 @@
       "deltaType": "down"
     },
     {
+      "id": 2,
       "platform": "instagram",
       "type": "Likes",
       "total": 5462,
@@ -57,6 +60,7 @@
       "deltaType": "up"
     },
     {
+      "id": 3,
       "platform": "instagram",
       "type": "Profile Views",
       "total": 52000,
@@ -64,6 +68,7 @@
       "deltaType": "up"
     },
     {
+      "id": 4,
       "platform": "twitter",
       "type": "Retweets",
       "total": 117,
@@ -71,6 +76,7 @@
       "deltaType": "up"
     },
     {
+      "id": 5,
       "platform": "twitter",
       "type": "Likes",
       "total": 507,
@@ -78,6 +84,7 @@
       "deltaType": "up"
     },
     {
+      "id": 6,
       "platform": "youtube",
       "type": "Likes",
       "total": 107,
@@ -85,12 +92,12 @@
       "deltaType": "down"
     },
     {
+      "id": 7,
       "platform": "youtube",
       "type": "Likes",
       "total": 1407,
       "delta": 12,
       "deltaType": "down"
     }
-
   ]
 }
