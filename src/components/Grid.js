@@ -6,4 +6,6 @@ export const Grid = styled.main`
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 3rem;
+  position: relative;
 `;
