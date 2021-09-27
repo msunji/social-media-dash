@@ -29,11 +29,12 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     font-size: 14px;
     font-family: var(--sans-serif);
+    transition: all 0.3s linear 0.12s;
   }
 
   body {
     background: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.textMinor}
+    color: ${({ theme }) => theme.textMinor};
   }
 `;
 
