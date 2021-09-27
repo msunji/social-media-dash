@@ -11,7 +11,7 @@
       "platform": "facebook",
       "followers": 1987,
       "followersDelta": 12,
-      "increase": true
+      "deltaType": "up"
     },
     {
       "id": 1,
