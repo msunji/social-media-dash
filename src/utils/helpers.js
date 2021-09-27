@@ -18,3 +18,7 @@ export const handlePlatformLogo = (platform) => {
       return null;
   }
 };
+
+export const handleNumToK = (num) => {
+  return Math.abs(num) >= 10000 ? Math.abs(num) / 1000 + "k" : Math.abs(num);
+};
