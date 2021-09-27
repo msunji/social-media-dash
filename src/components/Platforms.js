@@ -25,7 +25,18 @@ const Card = styled.div`
   position: relative;
   border-radius: 0 0 5px 5px;
   margin-bottom: 1.6rem;
-  background-clip: content-box, border-box;
+  background: ${({ theme }) => theme.cardBg};
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.4s ease-in;
+
+  &:hover {
+    background: ${({ theme }) => theme.cardHover};
+  }
 
   &::before {
     content: "";
@@ -36,24 +47,6 @@ const Card = styled.div`
     left: 0;
     ${(props) => handlePlatformColour(props.bordercolour)}
     border-radius: 5px 5px 0 0;
-  }
-
-  .inner-card {
-    background: ${({ theme }) => theme.cardBg};
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 0 0 5px 5px;
-
-    transition: all 0.4s ease-in;
-
-    &:hover {
-      background: ${({ theme }) => theme.cardHover};
-    }
   }
 
   .user-info {
@@ -76,7 +69,7 @@ const Card = styled.div`
     margin-bottom: 1.8rem;
     &__num {
       font-weight: 700;
-      font-size: 4.43em;
+      font-size: 4em;
       color: ${({ theme }) => theme.textMajor};
       margin-bottom: 0.8rem;
     }
@@ -126,23 +119,21 @@ export const Platforms = ({ data }) => {
       {platformData.map(
         ({ id, username, platform, followers, followersDelta, deltaType }) => (
           <Card key={id} bordercolour={platform}>
-            <div className="inner-card">
-              <div className="user-info">
-                <div>{handlePlatformLogo(platform)}</div>
-                <p>{username}</p>
-              </div>
-              <div className="followers-data">
-                <p className="followers-data__num">{handleNumToK(followers)}</p>
-                <p className="followers-data__text">followers</p>
-              </div>
-              <div
-                className={`followers-delta ${
-                  deltaType === "up" ? "up" : "down"
-                }`}
-              >
-                {handleArrows(deltaType)}
-                {followersDelta} Today
-              </div>
+            <div className="user-info">
+              <div>{handlePlatformLogo(platform)}</div>
+              <p>{username}</p>
+            </div>
+            <div className="followers-data">
+              <p className="followers-data__num">{handleNumToK(followers)}</p>
+              <p className="followers-data__text">followers</p>
+            </div>
+            <div
+              className={`followers-delta ${
+                deltaType === "up" ? "up" : "down"
+              }`}
+            >
+              {handleArrows(deltaType)}
+              {followersDelta} Today
             </div>
           </Card>
         )
