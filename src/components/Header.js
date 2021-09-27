@@ -35,6 +35,7 @@ const StyledToggle = styled.label`
   background: ${({ theme }) => theme.toggle};
   border-radius: 12px;
   // transition: all 0.4s ease;
+  margin-left: 1rem;
 
   &:hover {
     background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
@@ -44,6 +45,10 @@ const StyledToggle = styled.label`
     opacity: 0;
     width: 0;
     height: 0;
+
+    &:checked + .slider::before {
+      transform: translateX(24px);
+    }
   }
 
   .slider {
@@ -61,6 +66,7 @@ const StyledToggle = styled.label`
       width: 18px;
       background: ${({ theme }) => theme.topBg};
       border-radius: 50%;
+      transition: transform 0.25s linear;
     }
   }
 `;
