@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { handleNumSeparator } from "../utils/helpers";
+import { breakpoints } from "../styles/constants";
 
 const HeaderSection = styled.section`
   font-weight: 700;
   margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
 
   p {
     color: ${({ theme }) => theme.textMinor};
@@ -14,10 +17,22 @@ const HeaderSection = styled.section`
     border-color: ${({ theme }) => theme.textMinor};
     margin-bottom: 1.7rem;
     padding-bottom: 1.7rem;
+
     h1 {
       font-size: 1.71em;
+      line-height: 1.1;
       color: ${({ theme }) => theme.textMajor};
       margin-bottom: 0.8rem;
+    }
+  }
+
+  @media screen and ${breakpoints.lg} {
+    grid-template-columns: repeat(2, 1fr);
+
+    .header {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 `;
@@ -25,6 +40,12 @@ const HeaderSection = styled.section`
 const DarkModeFlex = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @media screen and ${breakpoints.lg} {
+    justify-self: flex-end;
+    align-self: center;
+  }
 `;
 
 const StyledToggle = styled.label`
