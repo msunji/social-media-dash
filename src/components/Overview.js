@@ -20,7 +20,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 
-  @media screen and ${breakpoints.lg} {
+  @media screen and ${breakpoints.lg} and (max-width: 999px) {
     grid-template-columns: repeat(3, 1fr);
 
     > div:not(:nth-of-type(3n)) {
