@@ -22,12 +22,55 @@ const HeaderSection = styled.section`
   }
 `;
 
+const DarkModeFlex = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const StyledToggle = styled.label`
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  background: ${({ theme }) => theme.toggle};
+  border-radius: 12px;
+  // transition: all 0.4s ease;
+
+  &:hover {
+    background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+
+  #checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 3px;
+    left: 3px;
+    right: 0;
+    bottom: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      background: ${({ theme }) => theme.topBg};
+      border-radius: 50%;
+    }
+  }
+`;
+
 const ToggleContainer = ({ toggle }) => {
   return (
-    <label htmlFor="checkbox">
+    <StyledToggle htmlFor="checkbox">
       <input type="checkbox" id="checkbox" onClick={toggle} />
-      {/* <div className="slider"></div> */}
-    </label>
+      <span className="slider"></span>
+    </StyledToggle>
   );
 };
 
@@ -40,10 +83,10 @@ export const Header = (props) => {
         <h1>Social Media Dashboard</h1>
         <p>Total Followers: {handleNumSeparator(totalFollowers)}</p>
       </div>
-      <ToggleContainer toggle={props.toggle}>
+      <DarkModeFlex>
         <p>Dark Mode</p>
-        <ToggleContainer />
-      </ToggleContainer>
+        <ToggleContainer toggle={props.toggle} />
+      </DarkModeFlex>
     </HeaderSection>
   );
 };
