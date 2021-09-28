@@ -32,7 +32,6 @@ const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.textMinor};
     font-family: "Inter", sans-serif;
-    transition: all 0.3s linear 0.12s;
     font-size: 14px;
   }
 
