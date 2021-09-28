@@ -18,11 +18,19 @@ And mobile:
 
 ![Desktop Preview](https://github.com/msunji/social-media-dash/blob/main/public/img/mobile-preview.png)
 
-I thought this would be a good opportunity for me to get more familiar with styled-components and theming. I learned a bit more about using the `ThemeProvider` wrapper component.
+I thought this would be a good opportunity for me to get more familiar with styled-components and theming. I learned a bit more about using the `ThemeProvider` wrapper component. In addition to this, I wanted to make it such that the choice of theme persisted in localstorage.
+
+One issue that gave me a bit of grief was the fact that the layout was shifting on load. I eventually realised that a transition on the `body` element was the cause of much of my frustration.
 
 ## Built with
 
 - React (Bootstrapped with CRA)
 - styled-components
 - styled-reset (CSS reset)
+- Flexbox
+- CSS Grid
 - Hosted with Vercel
+
+## Credits
+
+I used patterns from [lstore.graphics](https://lstore.graphics/) to zhuzh up the screenshots you see above.
