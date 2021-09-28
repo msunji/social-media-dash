@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { breakpoints } from "../styles/constants";
 
-// import helper function for logo selection
+// import helper functions
 import {
   handlePlatformLogo,
   handleNumToK,
@@ -17,6 +17,7 @@ const OverviewSection = styled.section`
 `;
 
 const Grid = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
 
@@ -38,7 +39,7 @@ const Grid = styled.div`
 
 const Card = styled.div`
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   background: ${({ theme }) => theme.cardBg};
   margin-bottom: 1rem;
   border-radius: 5px;

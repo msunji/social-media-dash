@@ -10,6 +10,7 @@ import {
 
 const Grid = styled.section`
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr;
   margin-bottom: 3rem;
 
