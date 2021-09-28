@@ -53,7 +53,7 @@ const StyledToggle = styled.label`
   display: inline-block;
   width: 48px;
   height: 24px;
-  background: hsl(230, 22%, 74%);
+  background: ${({ theme }) => theme.toggle};
   border-radius: 12px;
   transition: background 0.4s ease;
   margin-left: 1rem;
@@ -90,13 +90,13 @@ const StyledToggle = styled.label`
     width: 0;
     height: 0;
 
-    &:checked + .slider {
-      background: linear-gradient(
-        21deg,
-        rgba(55, 143, 230, 1) 23%,
-        rgba(62, 218, 130, 1) 98%
-      );
-    }
+    // &:checked + .slider {
+    //   // background: linear-gradient(
+    //   //   21deg,
+    //   //   rgba(55, 143, 230, 1) 23%,
+    //   //   rgba(62, 218, 130, 1) 98%
+    //   // );
+    // }
     z-index: 1;
 
     &:checked + .slider::before {
