@@ -14,9 +14,9 @@ Here's how the project looks like on desktop:
 
 ![Desktop Preview](https://github.com/msunji/social-media-dash/blob/main/public/img/desktop-preview.png)
 
-And mobile:
+<!-- And mobile:
 
-![Desktop Preview](https://github.com/msunji/social-media-dash/blob/main/public/img/mobile-preview.png)
+![Desktop Preview](https://github.com/msunji/social-media-dash/blob/main/public/img/mobile-preview.png) -->
 
 I thought this would be a good opportunity for me to get more familiar with styled-components and theming. I learned a bit more about using the `ThemeProvider` wrapper component.
 
