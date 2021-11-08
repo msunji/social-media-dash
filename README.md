@@ -12,7 +12,7 @@ For this challenge, user's need to be able to:
 
 Here's how the project looks like on desktop:
 
-![Desktop Preview](https://github.com/msunji/social-media-dash/blob/main/public/img/desktop-preview.png)
+![Desktop Preview](https://github.com/msunji/social-media-dash/blob/main/public/img/desktop-preview-updated.png)
 
 <!-- And mobile:
 
