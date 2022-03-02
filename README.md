@@ -1,22 +1,22 @@
 # Frontend Mentor: Social Media Dashboard (with theme switcher)
 
-[View the Challenge](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H/) | [View the Solution](https://fe-mentor-social-media-dash.vercel.app/)
+<p align="center">
+<img src="https://res.cloudinary.com/dxzcdb0pm/image/upload/v1646190532/fem-compilation/social-media-dash_tm5gqi.png" alt="Social Media Dashboard Preview" />
+</p>
+<br />
+<p align="center">
+  <a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H/">View Challenge</a> | <a href="https://fe-mentor-social-media-dash.vercel.app/">View Live Site</a>
+</div>
 
-## Overview
+<br />
 
-For this challenge, user's need to be able to:
+Users need to be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
-Here's how the project looks like on desktop:
-
-![Desktop Preview](https://github.com/msunji/social-media-dash/blob/main/public/img/desktop-preview-updated.png)
-
-<!-- And mobile:
-
-![Desktop Preview](https://github.com/msunji/social-media-dash/blob/main/public/img/mobile-preview.png) -->
+## Overview
 
 I thought this would be a good opportunity for me to get more familiar with styled-components and theming. I learned a bit more about using the `ThemeProvider` wrapper component.
 
@@ -32,7 +32,3 @@ One issue that gave me a bit of grief was the fact that the layout was shifting 
 - Flexbox
 - CSS Grid
 - Hosted with Vercel
-
-## Credits
-
-I used patterns from [lstore.graphics](https://lstore.graphics/) to zhuzh up the screenshots you see above.
