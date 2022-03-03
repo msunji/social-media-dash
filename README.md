@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H/">View Challenge</a> | <a href="https://fe-mentor-social-media-dash.vercel.app/">View Live Site</a>
-</div>
+</p>
 
 <br />
 
