@@ -1,8 +1,8 @@
 // Import logo svgs
-import { ReactComponent as FacebookLogo } from "../svgs/icon-facebook.svg";
-import { ReactComponent as IgLogo } from "../svgs/icon-instagram.svg";
-import { ReactComponent as TwitterLogo } from "../svgs/icon-twitter.svg";
-import { ReactComponent as YoutubeLogo } from "../svgs/icon-youtube.svg";
+import FacebookLogo from "../svgs/icon-facebook.svg";
+import IgLogo from "../svgs/icon-instagram.svg";
+import TwitterLogo from "../svgs/icon-twitter.svg";
+import YoutubeLogo from "../svgs/icon-youtube.svg";
 
 // Import arrow svgs
 import { ReactComponent as UpArrow } from "../svgs/icon-up.svg";
@@ -26,13 +26,13 @@ export const handlePlatformColour = (platform) => {
 export const handlePlatformLogo = (platform) => {
   switch (platform) {
     case "facebook":
-      return <FacebookLogo />;
+      return <img src={FacebookLogo} alt="Facebook logo" />;
     case "twitter":
-      return <TwitterLogo />;
+      return <img src={TwitterLogo} alt="Twitter logo" />;
     case "youtube":
-      return <YoutubeLogo />;
+      return <img src={YoutubeLogo} alt="Youtube logo" />;
     case "instagram":
-      return <IgLogo />;
+      return <img src={IgLogo} alt="Instagram logo" />;
     default:
       return null;
   }
