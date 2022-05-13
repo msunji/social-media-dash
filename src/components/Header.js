@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { handleNumSeparator } from "../utils/helpers";
 import { breakpoints } from "../styles/constants";
 
-const HeaderSection = styled.section`
+const HeaderSection = styled.div`
   font-weight: 700;
   margin-bottom: 3rem;
   display: grid;
@@ -130,7 +130,12 @@ const StyledToggle = styled.label`
 const ToggleContainer = ({ toggle }) => {
   return (
     <StyledToggle htmlFor="checkbox">
-      <input type="checkbox" id="checkbox" onClick={toggle} />
+      <input
+        type="checkbox"
+        id="checkbox"
+        aria-label="toggle-dark"
+        onClick={toggle}
+      />
       <span className="slider"></span>
     </StyledToggle>
   );
