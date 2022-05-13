@@ -57,7 +57,7 @@ const Card = styled.div`
     font-weight: 700;
     margin-bottom: 1.8rem;
 
-    svg {
+    img {
       margin-right: 0.6rem;
     }
 
@@ -122,7 +122,7 @@ export const Platforms = ({ data }) => {
         ({ id, username, platform, followers, followersDelta, deltaType }) => (
           <Card key={id} bordercolour={platform}>
             <div className="user-info">
-              <div>{handlePlatformLogo(platform)}</div>
+              {handlePlatformLogo(platform)}
               <p>{username}</p>
             </div>
             <div className="followers-data">
