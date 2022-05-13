@@ -8,7 +8,7 @@ import {
   handleArrows,
 } from "../utils/helpers";
 
-const Grid = styled.section`
+const Grid = styled.div`
   display: grid;
   width: 100%;
   grid-template-columns: 1fr;
